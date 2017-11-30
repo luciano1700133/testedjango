@@ -4,9 +4,9 @@ Django settings for django_get_started project.
 
 from os import path
 import os
-#mysqlconnstr = os.environ['MYSQLCONNSTR_localdb']
-#mysqlconnlst = mysqlconnstr.split(';')
-#mysqlconndict = dict(s.split('=',1) for s in mysqlconnlst)
+mysqlconnstr = os.environ['MYSQLCONNSTR_localdb']
+mysqlconnlst = mysqlconnstr.split(';')
+mysqlconndict = dict(s.split('=',1) for s in mysqlconnlst)
 
 PROJECT_ROOT = path.dirname(path.abspath(path.dirname(__file__)))
 
